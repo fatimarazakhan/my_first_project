@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UoK Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="mainWrapper">
+        
+        <div id="loginPage" class="login-container">
+            <div class="side-left">
+                <div class="illustration-wrapper">
+                    <img src="imageeeee.jpg" alt="University Illustration" class="login-side-img">
+                </div>
+            </div>
+
+            <div class="side-right">
+                <div class="form-wrapper">
+                    <div class="logo-container">
+    <img src="logo.jpg" alt="UoK Logo" class="uok-logo">
+</div>
+                    <h1>Welcome Back!</h1>
+                    <p class="subtitle">Don't have an account yet? <a href="#">Sign Up</a></p>
+
+                    <form id="loginForm">
+                        <div class="input-group">
+                            <label>Student ID</label>
+                            <input type="text" id="studentId" placeholder="Enter your Student ID" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Password</label>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-options">
+                            <label><input type="checkbox"> Keep me logged in</label>
+                            <a href="#" class="forgot-link">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="login-btn" id="loginBtn">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="dashboardPage" class="dashboard-container" style="display: none;">
+            <nav class="sidebar">
+                <div class="sidebar-logo">UoK Portal</div>
+                <ul>
+                    <li class="active">Dashboard</li>
+                    <li>My Profile</li>
+                    <li>Course Registration</li>
+                    <li>Examination Results</li>
+                    <li onclick="location.reload()" style="margin-top: 50px; color: #ffbcbc;">Logout</li>
+                </ul>
+            </nav>
+            <main class="content">
+                <header>
+                    <h2>Student Dashboard</h2>
+                    <div class="user-info">Welcome, Karachi University Student! 👋</div>
+                </header>
+                <div class="stats-grid">
+                    <div class="stat-card"><h3>GPA</h3><p>3.85</p></div>
+                    <div class="stat-card"><h3>Attendance</h3><p>92%</p></div>
+                    <div class="stat-card"><h3>Total Credits</h3><p>124</p></div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
